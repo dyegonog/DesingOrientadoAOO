@@ -17,9 +17,9 @@
                     (Valor > 800 && Tipo == TipoDeDespesa.Jantar));
         }
 
-        public string VerificarTipoDeDespesa(TipoDeDespesa tipo)
+        public string ObterNomeDaDespesa()
         {
-            switch (tipo)
+            switch (Tipo)
             {
                 case TipoDeDespesa.Almoco:
                     return "Almoço";

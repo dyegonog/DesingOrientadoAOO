@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LaboratorioDois
+namespace Laboratorio_3
 {
     public class RelatorioDeDespesas
     {

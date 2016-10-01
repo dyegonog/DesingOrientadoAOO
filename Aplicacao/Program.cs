@@ -1,4 +1,4 @@
-﻿using LaboratorioDois;
+﻿using Laboratorio_3;
 using System.Collections.Generic;
 
 namespace Aplicacao
@@ -7,15 +7,13 @@ namespace Aplicacao
     {
         static void Main(string[] args)
         {
-            var despesa_1 = new Despesa();
-            despesa_1.Tipo = Despesa.TipoDeDespesa.Jantar;
+            var despesa_1 = new DespesaComPassagemAerea();
             despesa_1.Valor = 10.0;
 
-            var despesa_2 = new Despesa();
-            despesa_2.Tipo = Despesa.TipoDeDespesa.Almoco;
+            var despesa_2 = new DespesaComAlmoco();
             despesa_2.Valor = 20.0;
 
-            IList<Despesa> despesas = new List<Despesa> { despesa_1, despesa_2};
+            IList<Despesa> despesas = new List<Despesa> { despesa_1, despesa_2 };
 
             var impressora = new Impressora();
 
