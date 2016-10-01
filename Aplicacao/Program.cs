@@ -7,11 +7,8 @@ namespace Aplicacao
     {
         static void Main(string[] args)
         {
-            var despesa_1 = new DespesaComPassagemAerea();
-            despesa_1.Valor = 10.0;
-
-            var despesa_2 = new DespesaComAlmoco();
-            despesa_2.Valor = 20.0;
+            var despesa_1 = new DespesaComPassagemAerea(10.0);
+            var despesa_2 = new DespesaComAlmoco(10.0);
 
             IList<Despesa> despesas = new List<Despesa> { despesa_1, despesa_2 };
 

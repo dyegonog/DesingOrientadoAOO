@@ -14,7 +14,7 @@ namespace Laboratorio_3
 
             foreach (var despesa in despesas)
             {
-                if (despesa.EhRefeicao(despesa.Tipo))
+                if (despesa.EhRefeicao())
                     totalAlimentacao += despesa.Valor;
 
                 var nomeDaDespesa = despesa.ObterNomeDaDespesa();
